@@ -1,5 +1,14 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { Normalize } from "styled-normalize";
 import { HelloComponent } from "./component/component";
 
-ReactDOM.render(<HelloComponent />, document.getElementById("app"));
+import "./styles.scss";
+
+ReactDOM.render(
+  <React.Fragment>
+    <Normalize />
+    <HelloComponent />
+  </React.Fragment>,
+  document.getElementById("app")
+);
