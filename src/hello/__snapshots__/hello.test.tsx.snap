@@ -2,6 +2,6 @@
 
 exports[`HelloComponent should render correctly 1`] = `
 <styled.h1>
-  Hello world -&gt; ReactJS With Typescript, Styled-Components and Webpack !!
+  Hello world - ReactJS With Typescript, Styled-Components and Webpack!!
 </styled.h1>
 `;
