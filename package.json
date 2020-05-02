@@ -1,5 +1,6 @@
 {
-  "name": "typescript-webpack",
+  "name": "@eurek.ai/boilerplate-react-typescript-styled-components-webpack",
+  "Author": "Eureka Innovation S.A.S. <develop@eurek.ai>",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
