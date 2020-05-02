@@ -7,7 +7,7 @@ const ErrorOverlayPlugin = require("error-overlay-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
 
 module.exports = {
-    entry: "./src/index.tsx",
+    entry: ["react-app-polyfill/ie11", "react-app-polyfill/stable", "./src/index.tsx"],
     devtool: "cheap-module-source-map",
     module: {
         rules: [
