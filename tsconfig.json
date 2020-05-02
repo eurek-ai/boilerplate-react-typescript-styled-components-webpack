@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
-    "outDir": "./build/",
+    "outDir": "./dist/",
+    "sourceMap": true,
     "noImplicitAny": true,
     "module": "commonjs",
     "target": "es5",
     "jsx": "react",
     "allowJs": true,
-    "experimentalDecorators": true,
-    "sourceMap": true,
-    "esModuleInterop": true
+    "allowSyntheticDefaultImports": true,
+    "lib": ["dom", "esnext"]
   },
-  "include": ["src/**/*", "typings"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"],
   "files": ["typings/declarations.d.ts"]
 }
