@@ -1,7 +1,8 @@
 const path = require("path");
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
+const ErrorOverlayPlugin = require("error-overlay-webpack-plugin");
+const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -41,6 +42,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist")
   },
   plugins: [
+    new Dotenv(),
     new ErrorOverlayPlugin(),
     new MiniCssExtractPlugin({
       filename: "style.css"
