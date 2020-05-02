@@ -10,6 +10,7 @@
     "sourceMap": true,
     "esModuleInterop": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "include": ["src/**/*", "typings"],
+  "exclude": ["node_modules", "**/*.spec.ts"],
+  "files": ["typings/declarations.d.ts"]
 }

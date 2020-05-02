@@ -1,6 +1,8 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
 
+import * as Style from "./hello.styles";
+
 export const HelloComponent: FunctionComponent = () => (
-  <h1>Hello world, ReactJS With Typescript!!</h1>
+  <Style.Head1>Hello world, ReactJS With Typescript!!</Style.Head1>
 );

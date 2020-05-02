@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { Normalize } from "styled-normalize";
-import { HelloComponent } from "./component/component";
+import { HelloComponent } from "./hello/hello";
 
-import "./styles.scss";
+import "bulma/bulma.sass";
 
 ReactDOM.render(
   <React.Fragment>

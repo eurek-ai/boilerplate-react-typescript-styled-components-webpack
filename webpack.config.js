@@ -1,6 +1,8 @@
 const path = require("path");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
+
 module.exports = {
   entry: "./src/index.tsx",
   module: {
@@ -39,6 +41,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist")
   },
   plugins: [
+    new ErrorOverlayPlugin(),
     new MiniCssExtractPlugin({
       filename: "style.css"
     }),
